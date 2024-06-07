@@ -46,9 +46,10 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 <br />
 
-<h3>Q4) Alert 3 (1/2) - What is the name of the suspicious exectable file involved?</h3>
-<b>Traverese Backwards Through URL</b> <br />
-** Inspect HTML of each directory > (/secure) References "0ff1cePh1sh.zip"<br /> <br />
+<h3>Q4) Alert 3 (1/2) - What is the name of the suspicious executable file involved?</h3>
+<b>Inspect Alert in Kabana and README file</b> <br />
+** Searching Kibana using alert 3 source and rule ><br />
+** Sysmon Events 12, 13, and 14 > OSINT shows events involve Windows Registry<br />
 <img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/e8f0bbc9-be91-4213-adb8-6ff6cc36c520" height="80%" width="80%" alt="Webpage Source Referencing Zip File"/>
 <br />
 <br />

@@ -20,7 +20,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <p align="center">
 
 <h3>Q1) Alert 1 (1/2) - What is the cmdlet used for downloading?</h3>
-<b>Analyze README file </b> <br />
+<b>Analyze README file and Kibana</b> <br />
 ** Search Kibana >  Analytics > Discover > Update search index to winevent-powershell > Search time frame of alert > Search Rule of Alert 1<br />
 ** OSINT Invoke-WebRequest -  cmdlet to send HTTP and HTTPS requests<br />
 ** ANSWER TO Q1) Invoke-WebRequest <br /> <br />
@@ -37,12 +37,12 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 
 
-<h3>Q3) What is the name of the php page which will process the stolen credentials?</h3>
-<b>Inspect Page Source</b> <br />
-** Right click web page > View Page Source <br /> 
-** PHP script is called once credentials entered<br />
-** ANSWER TO Q3) jeff.php <br /> <br />
-<img src="" height="80%" width="80%" alt="Webpage Source"/>
+<h3>Q3) Alert 2 (1/1) - What is the name of the suspicious EXE that is added for Persistence?</h3>
+<b>Inspect Previous Alert in Kabana and README file</b> <br />
+** Parameter -OutFile shows program probably stored in Temp folder <br /> 
+** Searching Kibana using alert 2 source and rule > Displays Sysmon Event ID 11 - File creation operations > Executable stored in Startup Folder<br />
+** ANSWER TO Q3) MSWorker.exe <br /> <br />
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/965d18ac-4491-4f7d-9b6e-8c0f9d0670cc" height="80%" width="80%" alt="Webpage Source"/>
 <br />
 <br />
 

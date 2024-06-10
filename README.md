@@ -54,7 +54,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 - /t REG_SZ = specifies type of registry <br />
 - /F /D C:\Windows\sevices.exe = adds registry without prompt and specifies the new data <br />
 ** ANSWER TO Q4) service.exe <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/1680ffb7-634f-4158-b0dc-d57e1a12ebdf" height="80%" width="80%" alt="Services Executable"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/f3d099e9-4011-4c50-8553-54d62090d55a" height="80%" width="80%" alt="Services Executable"/>
 <br />
 <br />
 

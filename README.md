@@ -54,7 +54,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 - /t REG_SZ = specifies type of registry <br />
 - /F /D C:\Windows\sevices.exe = adds registry without prompt and specifies the new data <br />
 ** ANSWER TO Q4) service.exe <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/1680ffb7-634f-4158-b0dc-d57e1a12ebdf" height="200%" width="80%" alt="Services Executable"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/1680ffb7-634f-4158-b0dc-d57e1a12ebdf" height="80%" width="80%" alt="Services Executable"/>
 <br />
 <br />
 
@@ -63,7 +63,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Registry is made out of Keys and Sub Keys and has paths similar to files <br /> 
 ** Look at the last entry in the path <br />
 ** ANSWER TO Q5) Service <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/c90b74e9-3b6b-4513-9560-6af38576dd0c" height="200%" width="80%" alt="PHP File"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/c90b74e9-3b6b-4513-9560-6af38576dd0c" height="80%" width="80%" alt="PHP File"/>
 <br />
 <br />
 

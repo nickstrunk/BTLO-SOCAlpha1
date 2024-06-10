@@ -58,12 +58,12 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 <br />
 
-<h3>Q5) What email address is set up to recieve the phishing credential logs?</h3>
-<b>Investigate PHP File That Processes the Stolen Credentials </b> <br />
-** Click on jeff.php file that is referenced in the HTML of the web page <br /> 
-** Variable $recipient = "boris.smets@tfl-uk.co" <br />
-** ANSWER TO Q5) boris.smets@tfl-uk.co <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/fc1b7cf2-29bf-4a85-9af5-960726a0c2c0" height="80%" width="80%" alt="PHP File"/>
+<h3>Q5) Alert 3 (2/2) - What is the name of the key path? </h3>
+<b>Analyze Registry Path</b> <br />
+** Registry is made out of Keys and Sub Keys and has paths similar to files <br /> 
+** Look at the last entry in the path <br />
+** ANSWER TO Q5) Service <br /> <br />
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/c90b74e9-3b6b-4513-9560-6af38576dd0c" height="80%" width="80%" alt="PHP File"/>
 <br />
 <br />
 

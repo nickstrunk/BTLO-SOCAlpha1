@@ -63,17 +63,18 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Registry is made out of Keys and Sub Keys and has paths similar to files <br /> 
 ** Look at the last entry in the path <br />
 ** ANSWER TO Q5) Service <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/c90b74e9-3b6b-4513-9560-6af38576dd0c" height="80%" width="80%" alt="PHP File"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/bb56bdc4-e458-4a69-a1c6-ca29940c3e84" height="80%" width="80%" alt="PHP File"/>
 <br />
 <br />
 
-<h3>Q6) What is the function called to produce the PHP variable which appears in the index1.html URL?</h3>
-<b>Inspect URL </b> <br />
-** Observe /index1.html then Epoch timestamp appended <br /> 
-** Traverse backwards in URL to view-source:http://securedocument.net/secure/L0GIN/protected/login/portal/ <br />
-** Displayed is the function Date().getTime(); <br />
-** ANSWER TO Q6) Date().getTime(); <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/b9c33a93-6951-43b2-a2e1-233cf9deb406" height="80%" width="80%" alt="PHP File Function"/>
+<h3>Q6) Alert 4 (1/2) - What is the name of the task? </h3>
+<b>Inspect Alert in Kabana and README file </b> <br />
+** Observe "SchTasks" command used ("SchTasks Create") <br />
+- /SC Daily = run everyday <br />
+- /TN "MyTask" = task name <br />
+- TR "C:\Program Files\GameLoaderGen\gen.bat" = program to run <br />
+** ANSWER TO Q6) My Task <br /> <br />
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/3d8b9a5d-eb0d-4766-85c8-dc8ee320368e" height="80%" width="80%" alt="PHP File Function"/>
 <br />
 <br />
 

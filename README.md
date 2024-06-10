@@ -19,7 +19,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 
 <p align="center">
 
-<h3>Q1) Alert 1 (1/2) - What is the cmdlet used for downloading?</h3>
+<h3>Q1) Alert 1 (1/2) - What is the cmdlet used for downloading? </h3>
 <b>Analyze README file and Kibana</b> <br />
 ** Search Kibana >  Analytics > Discover > Update search index to winevent-powershell > Search time frame of alert > Search Rule of Alert 1<br />
 ** OSINT Invoke-WebRequest -  cmdlet to send HTTP and HTTPS requests<br />
@@ -28,7 +28,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 <br />
 
-<h3>Q2) Alert 1 (2/2) - What is the full URL from which the file is downloaded?</h3>
+<h3>Q2) Alert 1 (2/2) - What is the full URL from which the file is downloaded? </h3>
 <b>Analyze Alert Data in Kibana</b> <br />
 ** Displayed is the URI of the Invoke-WebRequest<br /> 
 ** ANSWER TO Q2) hxxps[://]raw[.]githubusercontent[.]com/nerrorsec/SBT-SOC/main/MSWorker.exe <br /> <br />
@@ -37,7 +37,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 
 
-<h3>Q3) Alert 2 (1/1) - What is the name of the suspicious EXE that is added for Persistence?</h3>
+<h3>Q3) Alert 2 (1/1) - What is the name of the suspicious EXE that is added for Persistence? </h3>
 <b>Inspect Previous Alert in Kabana and README file</b> <br />
 ** Parameter -OutFile shows program probably stored in Temp folder <br /> 
 ** Searching Kibana using alert 2 source and rule > Displays Sysmon Event ID 11 - File creation operations > Executable stored in Startup Folder<br />
@@ -46,7 +46,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <br />
 <br />
 
-<h3>Q4) Alert 3 (1/2) - What is the name of the suspicious executable file involved?</h3>
+<h3>Q4) Alert 3 (1/2) - What is the name of the suspicious executable file involved? </h3>
 <b>Inspect Alert in Kabana and README file</b> <br />
 ** Searching Kibana using alert 3 source and rule ><br />
 ** Sysmon Events 12, 13, and 14 > OSINT shows events involve Windows Registry <br />
@@ -72,32 +72,17 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Observe "SchTasks" command used ("SchTasks Create") <br />
 - /SC Daily = run everyday <br />
 - /TN "MyTask" = task name <br />
-- TR "C:\Program Files\GameLoaderGen\gen.bat" = program to run <br />
+- /TR "C:\Program Files\GameLoaderGen\gen.bat" = program to run <br />
 ** ANSWER TO Q6) My Task <br /> <br />
 <img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/3d8b9a5d-eb0d-4766-85c8-dc8ee320368e" height="80%" width="80%" alt="PHP File Function"/>
 <br />
 <br />
 
-<h3>Q7) What is the domain of the website which should appear once credentials are entered?</h3>
-<b>Inspect jeff.php </b> <br />
-** Observe redirection domain <br /> 
-** Displayed is the window.location <br />
-** ANSWER TO Q7) office.com <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/ab5e6e7f-ed08-4533-bb03-27ff0d8bfe6a" height="80%" width="80%" alt="PHP Variable Function"/>
-<br />
-<br />
-
-<h3>Q8) There is an error in this phishing kit. What variable name is wrong causing the phishing site to break? (Enter any of 4 potential answers)</h3>
-<b>Inspecting jeff.php and Page Source of Webpage</b> <br />
-** Observe HTML form on webpage > Variables are assigned email (userrr) and password (passss) <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/820a66fc-6f44-4552-b13c-c73db16a6aab" height="80%" width="80%" alt="Webpage Source"/>
-<br />
-<br />
-** jeff.php expects variable names user1 (email) and pass1 (password) from submitted form <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/a11c82db-ec3a-44d0-8b1d-4fd5f7c9c990" height="80%" width="80%" alt="PHP File"/>
-<br />
-<br />
-** ANSWER TO Q8) ANY OF THESE FOUR (userrr, passss, user1, pass1) <br /> <br />
+<h3>Q7) Alert 4 (2/2) - What is the full path of the program? </h3>
+<b>Inspect Alert in Kabana and README file </b> <br />
+** Parameter /TR is provided with the program to run <br /> 
+** ANSWER TO Q7) C:\Program Files\GameLoaderGen\gen.bat <br /> <br />
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/51b75438-1659-4161-a959-3be13a900adb" height="80%" width="80%" alt="PHP Variable Function"/>
 <br />
 <br />
 

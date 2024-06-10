@@ -24,7 +24,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Search Kibana >  Analytics > Discover > Update search index to winevent-powershell > Search time frame of alert > Search Rule of Alert 1<br />
 ** OSINT Invoke-WebRequest -  cmdlet to send HTTP and HTTPS requests<br />
 ** ANSWER TO Q1) Invoke-WebRequest <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/d36f5357-61c2-4da8-9ff5-726f422af84d" height="80%" width="80%" alt="Root Webpage Source"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/d36f5357-61c2-4da8-9ff5-726f422af84d" height="80%" width="80%" alt="Download cdmlet/>
 <br />
 <br />
 
@@ -32,7 +32,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 <b>Analyze Alert Data in Kibana</b> <br />
 ** Displayed is the URI of the Invoke-WebRequest<br /> 
 ** ANSWER TO Q2) hxxps[://]raw[.]githubusercontent[.]com/nerrorsec/SBT-SOC/main/MSWorker.exe <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/9b7713b6-c0e1-43f8-bb5d-3b6a9d4b3a1b" height="80%" width="80%" alt="Root Webpage Source"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/9b7713b6-c0e1-43f8-bb5d-3b6a9d4b3a1b" height="80%" width="80%" alt="URL of File"/>
 <br />
 <br />
 
@@ -42,7 +42,7 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Parameter -OutFile shows program probably stored in Temp folder <br /> 
 ** Searching Kibana using alert 2 source and rule > Displays Sysmon Event ID 11 - File creation operations > Executable stored in Startup Folder<br />
 ** ANSWER TO Q3) MSWorker.exe <br /> <br />
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/965d18ac-4491-4f7d-9b6e-8c0f9d0670cc" height="80%" width="80%" alt="Webpage Source"/>
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/965d18ac-4491-4f7d-9b6e-8c0f9d0670cc" height="80%" width="80%" alt="Persistence Exe"/>
 <br />
 <br />
 
@@ -52,19 +52,9 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 ** Sysmon Events 12, 13, and 14 > OSINT shows events involve Windows Registry <br />
 ** Alert contains Sysmon Event 13 <br />
 - /t REG_SZ = specifies type of registry <br />
-- /F /D C:\Windows\sevices.exe = adds registry without prompt and specifies the new data
-<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/1680ffb7-634f-4158-b0dc-d57e1a12ebdf" height="80%" width="80%" alt="Webpage Source Referencing Zip File"/>
-<br />
-<br />
-**  Download the file from the web page directory where 0ff1cePh1sh.zip is referenced<br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/2dfbcb08-446f-478a-95a0-7f260971337e" height="80%" width="80%" alt="Webpage Directory Storing Zip File"/>
-<br />
-<br />
-** Run sha256sum on 0ff1cePh1sh.zip <br /> <br />
-<img src="https://github.com/nickstrunk/Phishyv1/assets/165805194/f7a65f14-4c54-4cf3-84a3-7f819e67853f" height="80%" width="80%" alt="SHA256 on Zip File"/>
-<br />
-<br />
-** ANSWER TO Q4) fa5b48 
+- /F /D C:\Windows\sevices.exe = adds registry without prompt and specifies the new data <br />
+** ANSWER TO Q4) service.exe <br /> <br />
+<img src="https://github.com/nickstrunk/SOCAlpha1/assets/165805194/1680ffb7-634f-4158-b0dc-d57e1a12ebdf" height="80%" width="80%" alt="Services Executable"/>
 <br />
 <br />
 

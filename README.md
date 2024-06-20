@@ -9,7 +9,8 @@ You are a SOC analyst and handling the alerts within your SIEM, ELK, is part of 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>ELK</b> 
+- <b>ELK</b>
+- <b>Splunk</b>
 
 <h2>Environments Used </h2>
 
